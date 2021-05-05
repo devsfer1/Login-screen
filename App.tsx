@@ -1,29 +1,22 @@
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
-import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  Button,
-  useColorScheme,
-  View,
-} from 'react-native';
 
 import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+  createStackNavigator,
+  StackNavigationProp,
+  StackScreenProps,
+} from '@react-navigation/stack';
+import React from 'react';
+import {Text, Button} from 'react-native';
+
+interface iHomeProps {
+  navigation: StackNavigationProp<any, any>;
+  route: any;
+}
 
 const Stack = createStackNavigator();
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen: React.FC<iHomeProps> = ({navigation}) => {
   return (
     <Button
       title="Go to Jane's profile"
@@ -32,11 +25,11 @@ const HomeScreen = ({navigation}) => {
   );
 };
 
-const ProfileScreen = ({navigation, route}) => {
+const ProfileScreen: React.FC<iHomeProps> = ({navigation, route}) => {
   return <Text>This is {route.params.name}'s profile</Text>;
 };
 
-const App = () => {
+const App: React.FC = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{headerShown: false}}>
