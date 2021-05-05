@@ -4,7 +4,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import {
   createStackNavigator,
   StackNavigationProp,
-  StackScreenProps,
 } from '@react-navigation/stack';
 import React from 'react';
 import {Text, Button} from 'react-native';
