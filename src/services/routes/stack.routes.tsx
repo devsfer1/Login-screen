@@ -1,6 +1,16 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 
-const Routes = () => <NavigationContainer />;
+import Initial from '../../components/screens/out/Initial/';
+import Login from '../../components/screens/out/Login';
 
-export default Routes;
+const stackRoutes = createStackNavigator();
+
+const AppRoutes: React.FC = () => (
+  <stackRoutes.Navigator headerMode="none">
+    <stackRoutes.Screen name="Initial" component={Initial} />
+    <stackRoutes.Screen name="Login" component={Login} />
+  </stackRoutes.Navigator>
+);
+
+export default AppRoutes;

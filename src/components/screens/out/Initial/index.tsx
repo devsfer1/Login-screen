@@ -7,11 +7,8 @@ interface iHomeProps {
   route: any;
 }
 
-export function Initial({navigation}): React.FC<iHomeProps> {
-  return (
-    <Button
-      title="Go to Jane's profile"
-      onPress={() => navigation.navigate('Profile', {name: 'Jane'})}
-    />
-  );
-}
+const Initial: React.FC<iHomeProps> = ({navigation}) => {
+  return <Button title="Teste" onPress={() => navigation.navigate('Login')} />;
+};
+
+export default Initial;
