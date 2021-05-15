@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import Initial from '../../components/screens/out/Initial/';
+import Initial from '../../../components/screens/out/Initial/';
 import Login from '../../components/screens/out/Login';
 
 const stackRoutes = createStackNavigator();

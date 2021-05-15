@@ -4,7 +4,7 @@ import {StackNavigationProp} from '@react-navigation/stack';
 
 import {Container, Title, LoginButton, ButtonText, Paragraph} from './styles';
 
-interface iHomeProps {
+interface iHomeProps extends StackNavigationProp {
   navigation: StackNavigationProp<any, any>;
   route: any;
 }
