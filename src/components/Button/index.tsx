@@ -16,7 +16,7 @@ export default function Button({
   ...rest
 }: ButtonProps) {
   return (
-    <LoginButton backgroundColor={backgroundColor}>
+    <LoginButton backgroundColor={backgroundColor} {...rest}>
       <ButtonText textColor={textColor}>{title}</ButtonText>
     </LoginButton>
   );

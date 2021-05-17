@@ -1,5 +1,5 @@
 import React from 'react';
-//import {Button} from 'react-native';
+
 import {StackNavigationProp} from '@react-navigation/stack';
 
 import Button from '../../../components/Button';
