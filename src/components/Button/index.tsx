@@ -5,12 +5,19 @@ import {LoginButton, ButtonText} from './styles';
 
 interface ButtonProps extends TouchableOpacityProps {
   title: string;
+  backgroundColor: string;
+  textColor: string;
 }
 
-export default function Button({title, ...rest}: ButtonProps) {
+export default function Button({
+  title,
+  backgroundColor,
+  textColor,
+  ...rest
+}: ButtonProps) {
   return (
-    <LoginButton>
-      <ButtonText>{title}</ButtonText>
+    <LoginButton backgroundColor={backgroundColor}>
+      <ButtonText textColor={textColor}>{title}</ButtonText>
     </LoginButton>
   );
 }
