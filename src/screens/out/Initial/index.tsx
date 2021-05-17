@@ -8,12 +8,12 @@ import {Container, Title, Paragraph} from './styles';
 
 import colors from '../../../styles/colors';
 
-interface iHomeProps extends StackNavigationProp {
+interface iInitialProps extends StackNavigationProp {
   navigation: StackNavigationProp<any, any>;
   route: any;
 }
 
-const Initial: React.FC<iHomeProps> = ({navigation}) => (
+const Initial: React.FC<iInitialProps> = ({navigation}) => (
   <Container>
     <Title>Login Template</Title>
     <Paragraph>
