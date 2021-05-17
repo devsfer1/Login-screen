@@ -2,7 +2,9 @@ import React from 'react';
 //import {Button} from 'react-native';
 import {StackNavigationProp} from '@react-navigation/stack';
 
-import {Container, Title, LoginButton, ButtonText, Paragraph} from './styles';
+import Button from '../../../components/Button';
+
+import {Container, Title, Paragraph} from './styles';
 
 interface iHomeProps extends StackNavigationProp {
   navigation: StackNavigationProp<any, any>;
@@ -15,12 +17,8 @@ const Initial: React.FC<iHomeProps> = ({navigation}) => (
     <Paragraph>
       The easiest way to start with your amazing application.
     </Paragraph>
-    <LoginButton onPress={() => navigation.navigate('Login')}>
-      <ButtonText>Login</ButtonText>
-    </LoginButton>
-    <LoginButton onPress={() => navigation.navigate('Sign Up')}>
-      <ButtonText>Sign Up</ButtonText>
-    </LoginButton>
+    <Button title="Login" onPress={() => navigation.navigate('Login')} />
+    <Button title="Sign Up" onPress={() => navigation.navigate('Sign Up')} />
   </Container>
 );
 
