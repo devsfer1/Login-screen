@@ -1,38 +1,26 @@
 import styled from 'styled-components/native';
 
+import colors from '../../../styles/colors';
+
 export const Container = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
+  padding: 0 25px;
+  background-color: ${colors.white};
 `;
 
 export const Title = styled.Text`
   font-size: 24px;
   font-weight: bold;
-  color: #a83246;
-  margin-bottom: 10px;
-`;
-
-export const LoginButton = styled.TouchableOpacity`
-  width: 80%;
-  background-color: #a83246;
+  color: ${colors.red};
   margin-bottom: 15px;
-  padding: 15px 0;
-  border-radius: 5px;
-`;
-
-export const ButtonText = styled.Text`
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
 `;
 
 export const Paragraph = styled.Text`
-  color: #1c1c1c;
+  color: ${colors.black};
   font-size: 16px;
   font-weight: 100;
   margin-bottom: 25px;
-  width: 80%;
   text-align: center;
 `;
