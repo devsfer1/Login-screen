@@ -1,18 +1,17 @@
 import React from 'react';
-import {Text} from 'react-native';
 
 import {StackNavigationProp} from '@react-navigation/stack';
 
 import {Container, Title} from './styles';
 
-interface iLoginProps extends StackNavigationProp {
+interface iSignUpProps extends StackNavigationProp {
   navigation: StackNavigationProp<any, any>;
 }
 
-const Login: React.FC<iLoginProps> = ({navigation}) => (
+const SignUp: React.FC<iSignUpProps> = ({navigation}) => (
   <Container>
-    <Title>Welcome Back.</Title>
+    <Title>Create Account.</Title>
   </Container>
 );
 
-export default Login;
+export default SignUp;
