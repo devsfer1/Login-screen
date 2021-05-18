@@ -1,13 +1,8 @@
 import React from 'react';
-import {Text} from 'react-native';
 
-import {StackNavigationProp} from '@react-navigation/stack';
+import {iLoginProps} from '../../../common/types';
 
 import {Container, Title} from './styles';
-
-interface iLoginProps extends StackNavigationProp {
-  navigation: StackNavigationProp<any, any>;
-}
 
 const Login: React.FC<iLoginProps> = ({navigation}) => (
   <Container>

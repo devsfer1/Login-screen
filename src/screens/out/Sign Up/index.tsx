@@ -1,12 +1,8 @@
 import React from 'react';
 
-import {StackNavigationProp} from '@react-navigation/stack';
+import {iSignUpProps} from '../../../common/types';
 
 import {Container, Title} from './styles';
-
-interface iSignUpProps extends StackNavigationProp {
-  navigation: StackNavigationProp<any, any>;
-}
 
 const SignUp: React.FC<iSignUpProps> = ({navigation}) => (
   <Container>
