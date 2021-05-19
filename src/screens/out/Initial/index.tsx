@@ -2,16 +2,18 @@ import React from 'react';
 
 import Button from '../../../components/Button';
 
-import {Container, Title, Paragraph} from './styles';
+import {Container, Title, Paragraph, LogoImg} from './styles';
 import {iInitialProps} from '../../../common/types';
+import Logo from '../../../assets/images/logo.png';
 
 import colors from '../../../styles/colors';
 
 const Initial: React.FC<iInitialProps> = ({navigation}) => (
   <Container>
-    <Title>Login Template</Title>
+    <LogoImg source={Logo} resizeMode="contain" />
+    <Title>Login</Title>
     <Paragraph>
-      The easiest way to start with your amazing application.
+      We offer the best products on the market. Discover our app today.
     </Paragraph>
     <Button
       title="Login"
