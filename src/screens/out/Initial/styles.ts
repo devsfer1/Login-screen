@@ -1,8 +1,7 @@
 import styled from 'styled-components/native';
 
-import {Dimensions} from 'react-native';
-
 import colors from '../../../styles/colors';
+import fonts from '../../../styles/fonts';
 
 export const Container = styled.View`
   flex: 1;
@@ -13,6 +12,7 @@ export const Container = styled.View`
 `;
 
 export const Title = styled.Text`
+  font-family: ${fonts.title};
   font-size: 26px;
   font-weight: bold;
   color: ${colors.red};
